@@ -45,15 +45,15 @@ const frameworks = [
  */
 
 for (let i = 0; i < frameworks.length; i++) {
-  const parts = frameworks[i].split("|");
+  let parts = frameworks[i].split("|");
 
   for (let j = 0; j < parts.length; j++) {
     parts[j] = parts[j].trim();
   }
 
-  const [name, date, users, popularity] = parts;
+  let [name, date, users, popularity] = parts;
 
-  const frameworkObj = {
+  let frameworkObj = {
     frameworkName: name,
     releaseDate: date,
     usersName: users,
